@@ -33,10 +33,7 @@ for n in numeros_escolhidos:
     if buscaLinear_nao_ordenado(numeros_sorteados, n) != None:
         acertos_numeros.append(n)
 
-print("Os numeros que voce acertou foram", end=" ")
-
-for n in acertos_numeros[:-1]:
-    print(n, end=", ")
+print("Os numeros que voce acertou foram:", end=" ")
 
 if acertos_numeros:
     for n in acertos_numeros[:-1]:
