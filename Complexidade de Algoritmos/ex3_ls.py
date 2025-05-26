@@ -48,11 +48,3 @@ if len(acertos_numeros) == 6:
     print("Voce ganhou!")
 else:
     print("Voce perdeu!")
-
-
-
-        
-
-
-
-
