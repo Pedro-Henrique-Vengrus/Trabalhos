@@ -1,12 +1,12 @@
 import random
 
-vetor1 = [random.randint(1, 100) for i in range(20)]
+vetor1 = random.sample(range(1, 101), 20)
 print(vetor1)
 
-vetor2 = [random.randint(1, 100) for i in range(20)]
+vetor2 = random.sample(range(1, 101), 20)
 print(vetor2)
 
-vetor3 = [random.randint(1, 100) for i in range(20)]
+vetor3 = random.sample(range(1, 101), 20)
 print(vetor3)
 
 print(" ")
@@ -40,7 +40,21 @@ def buscaLinear_nao_ordenado(vetor, valor):
 
 print(" ")
 
-print("Saida =", buscaLinear_nao_ordenado(vetor1, valor) + 1)
-print("Saida =", buscaLinear_nao_ordenado(vetor2, valor) + 1)
-print("Saida =", buscaLinear_nao_ordenado(vetor3, valor) + 1)
+resultado = buscaLinear_nao_ordenado(vetor1, valor)
+if resultado is not None:
+    print(f"Foram feitas {resultado + 1} comparacoes")
+else:
+    print("Valor não encontrado no primeiro vetor")
+
+resultado = buscaLinear_nao_ordenado(vetor2, valor)
+if resultado is not None:
+    print(f"Foram feitas {resultado + 1} comparacoes")
+else:
+    print("Valor não encontrado no segundo vetor")
+
+resultado = buscaLinear_nao_ordenado(vetor3, valor)
+if resultado is not None:
+    print(f"Foram feitas {resultado + 1} comparacoes")
+else:
+    print("Valor não encontrado no terceiro vetor")
 
