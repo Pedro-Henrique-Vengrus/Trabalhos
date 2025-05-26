@@ -80,6 +80,7 @@ print(f"Meio = {comparacoes} comparacoes")
 teste, comparacoes = buscaBinariaContando(vetor2, 100) # Esperado 7
 print(f"Fim = {comparacoes} comparacoes")
 teste, comparacoes = buscaBinariaContando(vetor2, 101) # Esperado 7
+print(f"Ausente = {comparacoes} comparacoes\n")
 
 print("Vetor de 1000 elementos busca binaria:")
 teste, comparacoes = buscaBinariaContando(vetor3, 1) # Esperado 9
