@@ -58,7 +58,7 @@ em_ordem(arvore)
 print(" ")
 
 arvore = remover(arvore, 50)
-print("\nApós remover 30:")
+print("\nApós remover 50:")
 em_ordem(arvore)
 
 print(" ")
