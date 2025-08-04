@@ -35,4 +35,3 @@ def calculadora():
             return "Operação invalida!"
         
 print(calculadora())
-        
