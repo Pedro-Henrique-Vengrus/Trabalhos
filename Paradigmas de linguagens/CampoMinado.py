@@ -68,7 +68,7 @@ while resultado == "Jogando":
         campo[coluna][linha] = "x"
         resultado = "Perdeu, acertou uma mina"
     else:
-        campo[coluna][linha] = "v"
+        campo[coluna][linha] = "a"
         resultado = valida_estado()
     imprimir_borda(True)
 
